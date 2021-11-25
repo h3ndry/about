@@ -58,7 +58,7 @@ header .white-bg {
     background-color: white;
     border-top-right-radius: 4rem;;
     width: 50%;
-    height: 30rem;;
+    height: 25rem;;
     left: 0;
     bottom: 0;
 }
@@ -87,6 +87,7 @@ header .logo .logo {
 
 .wrapper .thisone img {
  width: 100%;
+ /* transform: scale(0.6) */
 }
 
 header .text button {
@@ -99,18 +100,25 @@ header .text button {
     margin-right: 1rem;
 }
 
-.relate {
+header .text {
+    width: 110%;
+}
+
+.relate,
+.why {
     padding: 4rem 0;
 /* background-color: red; */
 }
 
-.relate h1 {
+.relate h1,
+.why h1 {
     text-align: center;
     color: #232323;
     font-size: 2.8rem;
 }
 
-.relate h1 span {
+.relate h1 span,
+.why h1 span {
     color: #3b4eff;
 }
 
@@ -124,6 +132,7 @@ header .text button {
 .relate .card {
     padding: 1rem;
     box-shadow: 2px 2px 40px rgba(0,0,0, .1);
+    color: #232323;
 }
 
 
@@ -146,3 +155,20 @@ header .text button {
 
 }
 
+.why ol {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.why ol li {
+    padding: 1rem;
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+    color: #232323;
+}
+
+footer {
+    text-align: center;
+    padding: 4rem 0;
+    opacity: .5;
+}

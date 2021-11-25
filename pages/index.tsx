@@ -26,6 +26,14 @@ const Home: NextPage = () => {
         },
     ];
 
+    const why = [
+        "I am a great learner. I like to learn new ways of doing the same things. This year I have learned to use Linux, Command-Line. I also learn how to deploy your website on Netlify.",
+        "Besides skills, I am a kind person. I value human interaction and I have a good sense of humor, after all, we are all human first before we are called with our job title.",
+        "I love SovTech, I have been applying for a position at sovTech because its values align with mine. I am a good fit for my career in technology",
+        "I like being challenged and challenging myself to do great things that seem I couldn't do before.  I can not wait to use my skills at SovTech.",
+        "I have a passion for Software Development. My Github profile shows. I love to write, solve the problem using the software.",
+    ];
+
     return (
         <>
             <header>
@@ -52,7 +60,6 @@ const Home: NextPage = () => {
                                 <a>Lean More</a>
                             </Link>
                         </div>
-
                         <Image src={vercel} alt="okay.." />
                     </div>
                 </div>
@@ -61,36 +68,54 @@ const Home: NextPage = () => {
 
             <main>
                 <section className="relate">
-                <div className="wrapper">
-                    <h1>
-                        <span> SovTech </span> Spex <br /> That I relate the
-                        most{" "}
-                    </h1>
+                    <div className="wrapper">
+                        <h1>
+                            <span> SovTech </span> Spex <br /> That I relate the
+                            most
+                        </h1>
 
-                    <div className="cards">
-                        {cards.map((card: any) => (
-                            <div className="card" key={card.id}>
-                                <h3>{card.name}</h3> <p>{card.desc}</p>{" "}
-                            </div>
-                        ))}
+                        <div className="cards">
+                            {cards.map((card: any) => (
+                                <div className="card" key={card.id}>
+                                    <h3>{card.name}</h3> <p>{card.desc}</p>{" "}
+                                </div>
+                            ))}
+                        </div>
                     </div>
-                </div>
                 </section>
 
                 <section className="icare">
-                <div className="wrapper">
-                <div className="text">
-                <h3> I am a greate team player, I love to share my idears with others </h3>
-                </div>
-                <div className="img">
-                <Image src={youyou}alt="" />
-                </div>
+                    <div className="wrapper">
+                        <div className="text">
+                            <h3>
+I am a great team player I love to share my ideas with others.
+                            </h3>
+                        </div>
+                        <div className="img">
+                            <Image src={youyou} alt="" />
+                        </div>
+                    </div>
+                </section>
+                <section className="why">
+                    <div className="wrapper">
+                        <h1>
+                            Why I think I am a great fit for <br /> for this{" "}
+                            <span>Graduate Programe</span>
+                        </h1>
 
-                
-                </div>
+                        <ol>
+                            {why.map((item: any, index) => (
+                                <li key={index}>{item}</li>
+                            ))}
+                        </ol>
+                    </div>
                 </section>
             </main>
-            <footer>this is a footer</footer>
+            <footer>
+                <Link href="www.hendry.xyz">
+                    <a>Simanga Hendry Khoza</a>
+                </Link>
+            </footer>
         </>
     );
 };
